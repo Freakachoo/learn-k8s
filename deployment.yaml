@@ -31,6 +31,6 @@ spec:
     spec:
       containers:
         - name: freakachooup-learndocker-container
-          image: freakachooup/learndocker
+          image: freakachooup/learndocker:latest
           ports:
             - containerPort: 4000
