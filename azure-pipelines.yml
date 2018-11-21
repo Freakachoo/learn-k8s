@@ -7,7 +7,7 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 variables:
-  imageName: 'freakachooup/learning-k8s:$(build.buildId)'
+  imageName: 'freakachooup/learning-k8s'
   dockerId: 'freakachooup'
 
 steps:
