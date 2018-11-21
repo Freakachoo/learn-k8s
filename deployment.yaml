@@ -24,6 +24,12 @@ metadata:
   name: freakachooup-learning-k8s-deployment
 spec:
   replicas: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2        # how many pods we can add at a time
+      maxUnavailable: 0  # maxUnavailable define how many pods can be unavailable
+                         # during the rolling update
   template:
     metadata:
       labels:
